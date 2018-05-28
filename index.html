@@ -9,34 +9,120 @@
     <link rel="stylesheet" href="libs/bootstrap.min.css">
 
     <!--Project CSS-->
+    <link rel="stylesheet" href="css/main.css">
 
     <title>Restaurant portfolio</title>
+
 
 </head>
 <body>
 
-    <!--Navbar-->
-        <nav class="navbar navbar-expand-lg">
-            <button class="navbar-toggler mx-auto" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <div class="navbar-nav mx-auto">
-                    <a class="nav-item nav-link active" href="#">Dishes</a>
-                    <a class="nav-item nav-link" href="#">Quotes</a>
-                    <a class="nav-item nav-link" href="#">Features</a>
+<!--Navbar-->
+<div class="container-fluid navbar-top">
+    <nav class="navbar navbar-expand-md">
+        <button class="navbar-toggler mx-auto" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse align-items-center " id="navbarNav">
+            <div class="navbar-nav d-none d-md-flex mx-auto justify-content-center px-2">
+                <a class="nav-item nav-link active" href="#">Dishes</a>
+                <a class="nav-item nav-link" href="#">Quotes</a>
+                <a class="nav-item nav-link" href="#">Features</a>
+            </div>
+            <div class="navbar-nav d-flex mx-auto d-md-none px-3 w-25 bg-transparent">
+                <a class="nav-item nav-link active" href="#">Dishes</a>
+                <a class="nav-item nav-link" href="#">Quotes</a>
+                <a class="nav-item nav-link" href="#">Features</a>
+            </div>
+        </div>
+    </nav>
+</div>
+
+<div class="container-fluid header-main">
+    <div class="img-box">
+        <div class="container-fluid content-box">
+            <div class="container h-100">
+                <div class="row h-50 d-none d-sm-block">
+                    <div class="col">
+
+                    </div>
+                </div>
+                <div class="row h-50 align-items-center justify-content-around">
+                    <div class="col-12 col-md-10 col-lg-8 col-xl-6">
+                        <h1>The best restaurant</h1>
+                        <p class="my-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab aspernatur at
+                            blanditiis culpa earum et ex labore minus qui?</p>
+                        <button class="mt-2">BOOK A TABLE</button>
+                    </div>
+                    <div class="col-3">
+
+                    </div>
                 </div>
             </div>
-        </nav>
+        </div>
+    </div>
+</div>
 
+<div class="container-fluid  text-center dishes">
+    <h2 class="my-5">Our Dishes</h2>
 
+    <div class="container text-center">
+        <div class="row justify-content-center">
+            <div class="col-12 col-md-6 mx-auto">
+                <nav class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+                    <a class="nav-item nav-link" id="pills-fish-tab" data-toggle="pill" href="#pills-fish" role="tab"
+                       aria-controls="pills-fish" aria-selected="false">FISH</a>
+                    <a class="nav-item nav-link active" id="pills-meat-tab" data-toggle="pill" href="#pills-meat"
+                       role="tab" aria-controls="pills-meat" aria-selected="true">MEAT</a>
+                    <a class="nav-item nav-link" id="pills-salads-tab" data-toggle="pill" href="#pills-salads"
+                       role="tab" aria-controls="pills-salads" aria-selected="false">SALADS</a>
+                    <a class="nav-item nav-link" id="pills-desserts-tab" data-toggle="pill" href="#pills-desserts"
+                       role="tab" aria-controls="pills-desserts" aria-selected="false">DESSERTS</a>
+                </nav>
+            </div>
+            <div class="col-12">
+                <div class="tab-content" id="pills-tabContent">
+                    <div class="tab-pane fade" id="pills-fish" role="tabpanel" aria-labelledby="pills-fish-tab">
+                        ...
+                    </div>
+                    <div class="tab-pane fade show active" id="pills-meat" role="tabpanel"
+                         aria-labelledby="pills-meat-tab">
 
-    <!--Lib JS -->
-    <script src="libs/http_code.jquery.com_jquery-3.3.1.slim.js"></script>
-    <script src="libs/http_cdnjs.cloudflare.com_ajax_libs_popper.js_1.14.3_umd_popper.js"></script>
-    <script src="libs/bootstrap.min.js"></script>
+                        <div class="card-deck text-center my-5 mx-auto">
+                            <div class="card">
+                                <img src="#" alt="">
+                                <p>Burger</p>
+                            </div>
+                            <div class="card">
+                                <img src="#" alt="">
+                                <p>Steak</p>
+                            </div>
+                            <div class="card">
+                                <img src="#" alt="">
+                                <p>Pasta</p>
+                            </div>
+                        </div>
 
-    <!--Project JS-->
+                    </div>
+                    <div class="tab-pane fade" id="pills-salads" role="tabpanel" aria-labelledby="pills-salads-tab">
+                        ...
+                    </div>
+                    <div class="tab-pane fade" id="pills-desserts" role="tabpanel" aria-labelledby="pills-desserts-tab">
+                        ...
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--Lib JS -->
+<script src="libs/http_code.jquery.com_jquery-3.3.1.slim.js"></script>
+<script src="libs/http_cdnjs.cloudflare.com_ajax_libs_popper.js_1.14.3_umd_popper.js"></script>
+<script src="libs/bootstrap.min.js"></script>
+
+<!--Project JS-->
 
 </body>
 </html>
