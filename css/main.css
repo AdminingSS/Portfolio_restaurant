@@ -113,5 +113,21 @@
     border-radius: 3px;
     background-color: #ffffff;
     border: solid 2px #373737; }
+.dishes .slick-next {
+  z-index: 1; }
+  .dishes .slick-next::before {
+    content: '';
+    display: block;
+    background: url("../img/next-arrow.png") no-repeat;
+    width: 15px;
+    height: 25px; }
+.dishes .slick-prev {
+  z-index: 1; }
+  .dishes .slick-prev::before {
+    content: '';
+    display: block;
+    background: url("../img/prev-arrow.png") no-repeat;
+    width: 15px;
+    height: 25px; }
 
 /*# sourceMappingURL=main.css.map */

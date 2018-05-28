@@ -149,4 +149,30 @@
       border: solid 2px #373737;
     }
   }
+
+  .slick-next {
+    //right: 45px;
+    z-index: 1;
+
+    &::before {
+      content: '';
+      display: block;
+      background: url("../img/next-arrow.png") no-repeat;
+      width: 15px;
+      height: 25px;
+    }
+  }
+
+  .slick-prev {
+    //left: 25px;
+    z-index: 1;
+
+    &::before {
+      content: '';
+      display: block;
+      background: url("../img/prev-arrow.png") no-repeat;
+      width: 15px;
+      height: 25px;
+    }
+  }
 }
