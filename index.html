@@ -12,11 +12,13 @@
     <link rel="stylesheet" href="libs/slick/slick.css">
     <link rel="stylesheet" href="libs/slick/slick-theme.css">
 
+    <!--Fancybox CSS-->
+    <link rel="stylesheet" href="libs/fancybox/jquery.fancybox.min.css">
+
     <!--Project CSS-->
     <link rel="stylesheet" href="css/main.css">
 
     <title>Restaurant portfolio</title>
-
 
 </head>
 <body>
@@ -57,7 +59,7 @@
                         <h1>The best restaurant</h1>
                         <p class="my-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab aspernatur at
                             blanditiis culpa earum et ex labore minus qui?</p>
-                        <button class="mt-2">BOOK A TABLE</button>
+                        <button class="mt-2" data-fancybox data-src="#hiddenBookingForm">BOOK A TABLE</button>
                     </div>
                     <div class="col-3">
 
@@ -88,12 +90,39 @@
             <div class="col-12">
                 <div class="tab-content" id="pills-tabContent">
                     <div class="tab-pane fade" id="pills-fish" role="tabpanel" aria-labelledby="pills-fish-tab">
-                        ...
+                        <!--Slider Fish-->
+                        <div class="text-center" id="sliderDishesFish">
+                            <div class="card">
+                                <img class="card-img-top rounded-circle" src="img/base.png" alt="Test">
+                                <div class="card-body">
+                                    <p class="card-text">Test</p>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <img class="card-img-top rounded-circle" src="img/burger.jpg" alt="Burger">
+                                <div class="card-body">
+                                    <p class="card-text">Burger</p>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <img class="card-img-top rounded-circle" src="img/steak.jpg" alt="Steak">
+                                <div class="card-body">
+                                    <p class="card-text">Steak</p>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <img class="card-img-top rounded-circle" src="img/pasta.jpg" alt="Pasta">
+                                <div class="card-body">
+                                    <p class="card-text">Pasta</p>
+                                </div>
+                            </div>
+
+                        </div>
                     </div>
                     <div class="tab-pane fade show active" id="pills-meat" role="tabpanel"
                          aria-labelledby="pills-meat-tab">
-                        <!--Slider-->
-                        <div class="text-center" id="sliderDishes">
+                        <!--Slider Meat-->
+                        <div class="text-center" id="sliderDishesMeat">
                             <div class="card">
                                 <img class="card-img-top rounded-circle" src="img/burger.jpg" alt="Burger">
                                 <div class="card-body">
@@ -121,10 +150,62 @@
                         </div>
                     </div>
                     <div class="tab-pane fade" id="pills-salads" role="tabpanel" aria-labelledby="pills-salads-tab">
-                        ...
+                        <!--Slider Salads-->
+                        <div class="text-center" id="sliderDishesSalads">
+                            <div class="card">
+                                <img class="card-img-top rounded-circle" src="img/steak.jpg" alt="Steak">
+                                <div class="card-body">
+                                    <p class="card-text">Steak</p>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <img class="card-img-top rounded-circle" src="img/burger.jpg" alt="Burger">
+                                <div class="card-body">
+                                    <p class="card-text">Burger</p>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <img class="card-img-top rounded-circle" src="img/base.png" alt="Test">
+                                <div class="card-body">
+                                    <p class="card-text">Test</p>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <img class="card-img-top rounded-circle" src="img/pasta.jpg" alt="Pasta">
+                                <div class="card-body">
+                                    <p class="card-text">Pasta</p>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                     <div class="tab-pane fade" id="pills-desserts" role="tabpanel" aria-labelledby="pills-desserts-tab">
-                        ...
+                        <!--Slider Desserts-->
+                        <div class="text-center" id="sliderDishesDesserts">
+                            <div class="card">
+                                <img class="card-img-top rounded-circle" src="img/steak.jpg" alt="Steak">
+                                <div class="card-body">
+                                    <p class="card-text">Steak</p>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <img class="card-img-top rounded-circle" src="img/pasta.jpg" alt="Pasta">
+                                <div class="card-body">
+                                    <p class="card-text">Pasta</p>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <img class="card-img-top rounded-circle" src="img/burger.jpg" alt="Burger">
+                                <div class="card-body">
+                                    <p class="card-text">Burger</p>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <img class="card-img-top rounded-circle" src="img/base.png" alt="Test">
+                                <div class="card-body">
+                                    <p class="card-text">Test</p>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -133,17 +214,35 @@
 </div>
 
 <div class="container-fluid position-relative quotes p-0" id="quotes">
-    <img class="w-100" src="img/chef.jpg" alt="">
-    <div class="t-0 w-100">
-        <div class="container">
-            <div class="row">
-                <div class="col-10 col-lg">
-                    <h5 class="my-0 mt-sm-5 mb-sm-3">“Lorem ipsum and other texts.
-                        We are the best restaurant.“</h5>
-                    <p>Paul Tasty, chef</p>
+    <div class="position-relative">
+        <img class="w-100" src="img/chef.jpg" alt="">
+        <div class="t-0 w-100">
+            <div class="container">
+                <div class="row">
+                    <div class="col-10 col-lg">
+                        <h5 class="my-0 mt-sm-5 mb-sm-3">“Lorem ipsum and other texts.
+                            We are the best restaurant.“</h5>
+                        <p>Paul Tasty, chef</p>
+                    </div>
+                    <div class="col"></div>
+                    <div class="col"></div>
                 </div>
-                <div class="col"></div>
-                <div class="col"></div>
+            </div>
+        </div>
+    </div>
+    <div class="position-relative">
+        <img class="w-100" src="img/chef.jpg" alt="">
+        <div class="t-0 w-100">
+            <div class="container">
+                <div class="row">
+                    <div class="col-10 col-lg">
+                        <h5 class="my-0 mt-sm-5 mb-sm-3">“Lorem ipsum and other texts.
+                            We are the best restaurant.“</h5>
+                        <p>Paul Tasty, chef</p>
+                    </div>
+                    <div class="col"></div>
+                    <div class="col"></div>
+                </div>
             </div>
         </div>
     </div>
@@ -240,11 +339,68 @@
     </div>
 </div>
 
+<!--Hidden objects-->
+<!--Booking form-->
+<div class="container rounded" style="display: none; width: 50%" id="hiddenBookingForm">
+    <div class="row">
+        <div class="col-12">
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h3 class="panel-title">Booking form</h3>
+                </div>
+                <div class="panel-body">
+                    <form id="bookingForm" method="post" class="form-horizontal" action="">
+                        <div class="form-group row">
+                            <label class="col-sm-4 control-label" for="name">Name</label>
+                            <div class="col-sm-8">
+                                <input type="text" class="form-control" id="name" name="name" placeholder="Name"/>
+                            </div>
+                        </div>
+
+                        <div class="form-group row">
+                            <label class="col-sm-4 control-label" for="phone">Username</label>
+                            <div class="col-sm-8">
+                                <input type="text" class="form-control" id="phone" name="phone" placeholder="Phone"/>
+                            </div>
+                        </div>
+
+                        <div class="form-group row">
+                            <label class="col-sm-4 control-label" for="email">Email</label>
+                            <div class="col-sm-8">
+                                <input type="text" class="form-control" id="email" name="email" placeholder="Email"/>
+                            </div>
+                        </div>
+
+                        <div class="form-group row">
+                            <label class="col-sm-4 control-label" for="message">Message</label>
+                            <div class="col-sm-8">
+                                <textarea type="password" class="form-control" id="message" name="message"
+                                          placeholder="Message"></textarea>
+                            </div>
+                        </div>
+
+                        <div class="form-group row">
+                            <div class="col-sm-8 mx-auto">
+                                <button type="submit" class="btn btn-primary w-100" name="book" value="Book">Book a
+                                    Table
+                                </button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
 <!--Lib JS -->
 <script src="libs/http_code.jquery.com_jquery-3.3.1.slim.js"></script>
 <script src="libs/http_cdnjs.cloudflare.com_ajax_libs_popper.js_1.14.3_umd_popper.js"></script>
 <script src="libs/bootstrap.min.js"></script>
 <script src="libs/slick/slick.js"></script>
+<script src="libs/fancybox/jquery.fancybox.min.js"></script>
+<script src="libs/jqvalidate/jquery.validate.min.js"></script>
+<script src="libs/jqvalidate/additional-methods.min.js"></script>
 
 <!--Project JS-->
 <script src="js/main.js"></script>
