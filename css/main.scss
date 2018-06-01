@@ -45,20 +45,19 @@
   z-index: 100;
   position: absolute;
   top: 0;
+
   .navbar-toggler-icon {
     width: 51px;
     height: 50px;
     background-image: url(../img/navbar-toggler-icon.png);
   }
+
   .navbar-nav {
     width: 300px;
     height: 55px;
     background: url(../img/navbar-top.png) no-repeat;
     background-size: cover;
-    //border-radius: 24.5px;
-    //background-color: #333333;
-    //box-shadow: 0px 4px 6px 0 rgba(16, 16, 16, 0.75);
-    //
+
     &.bg-transparent {
       background: none;
     }
@@ -81,10 +80,14 @@
   -webkit-background-size: cover;
   background-size: cover;
   min-height: 400px;
+  color: #ffffff;
+
   .img-box {
     padding-top: 66.7%;
     height: 0;
+    min-height: 400px;
     position: relative;
+
     .content-box {
       position: absolute;
       top: 0;
@@ -94,16 +97,16 @@
     }
   }
 
-  color: #ffffff;
-
   h1 {
     font-family: AbrilFatface, cursive;
     font-size: 51px;
     font-weight: normal;
     line-height: 0.59;
     text-align: left;
-    color: #ffffff;
     text-shadow: 0 2px 4px rgba(16, 16, 16, 0.75);
+    @media (max-width: 768px) {
+      font-size: 34px;
+    }
   }
 
   p {
@@ -111,8 +114,10 @@
     font-size: 18px;
     font-weight: 300;
     text-align: left;
-    color: #ffffff;
     text-shadow: 0 2px 4px rgba(16, 16, 16, 0.75);
+    @media (max-width: 768px) {
+      font-size: 12px;
+    }
   }
 
   button {
@@ -148,6 +153,12 @@
     line-height: 1.67;
     letter-spacing: 1.8px;
     color: #999999;
+    @media (max-width: 768px) {
+      font-size: 12px;
+    }
+    @media (max-width: 380px) {
+      font-size: 8px;
+    }
     &.active {
       color: #333333;
       border-radius: 3px;
@@ -193,9 +204,7 @@
   }
 }
 
-.chef {
-  min-height: 300px;
-
+.quotes {
   font-family: Roboto, sans-serif;
   font-weight: normal;
 
@@ -204,12 +213,18 @@
     font-style: italic;
     line-height: 1.43;
     color: #f5eae9;
+    @media (max-width: 768px) {
+      font-size: 14px;
+    }
   }
   p {
     font-size: 15px;
     font-style: normal;
     line-height: 2;
     color: #ffffff;
+    @media (max-width: 768px) {
+      font-size: 10px;
+    }
   }
 }
 
@@ -229,15 +244,64 @@
   color: #333333;
   text-align: center;
 
+  @media (max-width: 768px) {
+    font-size: 12px;
+  }
+
+}
+
+.fish {
+
+  .fish-resize {
+    @media (max-width: 500px) {
+      height: 75% !important;
+    }
+    @media (max-width: 380px) {
+      height: 100% !important;
+    }
+  }
+
+  .ad-fish {
+    background-color: #c19663;
+    font-family: Roboto, sans-serif;
+    font-weight: normal;
+    color: #ffffff;
+
+    h5 {
+      font-size: 21px;
+      line-height: 1.43;
+      @media (max-width: 768px) {
+        font-size: 14px;
+      }
+    }
+
+    span {
+      font-size: 15px;
+      line-height: normal;
+      @media (max-width: 768px) {
+        font-size: 10px;
+      }
+    }
+  }
 }
 
 .booking {
+
+  .booking-resize {
+    @media (max-width: 380px) {
+      height: 75% !important;
+    }
+  }
+
   h5 {
     font-family: Roboto, sans-serif;
     font-size: 21px;
     font-weight: normal;
     color: #ffffff;
     text-shadow: 0 4px 6px rgba(16, 16, 16, 0.75);
+    @media (max-width: 768px) {
+      font-size: 14px;
+    }
   }
   h1 {
     font-family: AbrilFatface, cursive;
@@ -245,6 +309,9 @@
     font-weight: normal;
     color: #ffffff;
     text-shadow: 0 4px 6px rgba(16, 16, 16, 0.75);
+    @media (max-width: 768px) {
+      font-size: 28px;
+    }
   }
 }
 
@@ -254,14 +321,20 @@
   font-family: Roboto, sans-serif;
   font-weight: normal;
 
-  span {
+  a {
     font-size: 18px;
     color: #ffffff;
+    @media (max-width: 768px) {
+      font-size: 12px;
+    }
   }
 
   .copyright {
     font-size: 15px;
     color: #fefefe;
+    @media (max-width: 768px) {
+      font-size: 10px;
+    }
   }
 
 }

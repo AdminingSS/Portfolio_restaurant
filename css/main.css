@@ -26,7 +26,6 @@
   font-weight: 400;
   src: local("Roboto"), local("Roboto-Regular"), url(../fonts/Roboto-latin.woff2) format("woff2");
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
-
 .t-0 {
     position: absolute;
     top: 0;
@@ -66,6 +65,7 @@
   .header-main .img-box {
     padding-top: 66.7%;
     height: 0;
+      min-height: 400px;
     position: relative; }
     .header-main .img-box .content-box {
       position: absolute;
@@ -79,15 +79,25 @@
     font-weight: normal;
     line-height: 0.59;
     text-align: left;
-    color: #ffffff;
     text-shadow: 0 2px 4px rgba(16, 16, 16, 0.75); }
+
+@media (max-width: 768px) {
+    .header-main h1 {
+        font-size: 34px;
+    }
+}
   .header-main p {
     font-family: Roboto, sans-serif;
     font-size: 18px;
     font-weight: 300;
     text-align: left;
-    color: #ffffff;
     text-shadow: 0 2px 4px rgba(16, 16, 16, 0.75); }
+
+@media (max-width: 768px) {
+    .header-main p {
+        font-size: 12px;
+    }
+}
   .header-main button {
     width: 220px;
     height: 60px;
@@ -114,6 +124,18 @@
   line-height: 1.67;
   letter-spacing: 1.8px;
   color: #999999; }
+
+@media (max-width: 768px) {
+    .dishes .nav-link {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 380px) {
+    .dishes .nav-link {
+        font-size: 8px;
+    }
+}
   .dishes .nav-link.active {
     color: #333333;
     border-radius: 3px;
@@ -139,7 +161,6 @@
     background: url("../img/prev-arrow.png") no-repeat;
     width: 15px;
     height: 25px; }
-
 .dishes .card {
     width: 220px !important;
     border: transparent;
@@ -150,24 +171,35 @@
     height: 220px;
 }
 
-.chef {
-    min-height: 300px;
+.quotes {
     font-family: Roboto, sans-serif;
     font-weight: normal;
 }
 
-.chef h5 {
+.quotes h5 {
     font-size: 21px;
     font-style: italic;
     line-height: 1.43;
     color: #f5eae9;
 }
 
-.chef p {
+@media (max-width: 768px) {
+    .quotes h5 {
+        font-size: 14px;
+    }
+}
+
+.quotes p {
     font-size: 15px;
     font-style: normal;
     line-height: 2;
     color: #ffffff;
+}
+
+@media (max-width: 768px) {
+    .quotes p {
+        font-size: 10px;
+    }
 }
 
 .features {
@@ -186,6 +218,58 @@
     color: #333333;
 }
 
+@media (max-width: 768px) {
+    .features {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 500px) {
+    .fish .fish-resize {
+        height: 75% !important;
+    }
+}
+
+@media (max-width: 380px) {
+    .fish .fish-resize {
+        height: 100% !important;
+    }
+}
+
+.fish .ad-fish {
+    background-color: #c19663;
+    font-family: Roboto, sans-serif;
+    font-weight: normal;
+    color: #ffffff;
+}
+
+.fish .ad-fish h5 {
+    font-size: 21px;
+    line-height: 1.43;
+}
+
+@media (max-width: 768px) {
+    .fish .ad-fish h5 {
+        font-size: 14px;
+    }
+}
+
+.fish .ad-fish span {
+    font-size: 15px;
+    line-height: normal;
+}
+
+@media (max-width: 768px) {
+    .fish .ad-fish span {
+        font-size: 10px;
+    }
+}
+
+@media (max-width: 380px) {
+    .booking .booking-resize {
+        height: 75% !important;
+    }
+}
 .booking h5 {
     font-family: Roboto, sans-serif;
     font-size: 21px;
@@ -194,6 +278,11 @@
     text-shadow: 0 4px 6px rgba(16, 16, 16, 0.75);
 }
 
+@media (max-width: 768px) {
+    .booking h5 {
+        font-size: 14px;
+    }
+}
 .booking h1 {
     font-family: AbrilFatface, cursive;
     font-size: 42px;
@@ -202,20 +291,38 @@
     text-shadow: 0 4px 6px rgba(16, 16, 16, 0.75);
 }
 
+@media (max-width: 768px) {
+    .booking h1 {
+        font-size: 28px;
+    }
+}
+
 .footer {
     background-color: #333333;
     font-family: Roboto, sans-serif;
     font-weight: normal;
 }
 
-.footer span {
+.footer a {
     font-size: 18px;
     color: #ffffff;
+}
+
+@media (max-width: 768px) {
+    .footer a {
+        font-size: 12px;
+    }
 }
 
 .footer .copyright {
     font-size: 15px;
     color: #fefefe;
+}
+
+@media (max-width: 768px) {
+    .footer .copyright {
+        font-size: 10px;
+    }
 }
 
 /*# sourceMappingURL=main.css.map */
