@@ -33,7 +33,7 @@
 
 .navbar-top {
   z-index: 100;
-  position: absolute;
+    position: fixed;
   top: 0; }
   .navbar-top .navbar-toggler-icon {
     width: 51px;
@@ -46,6 +46,11 @@
     background-size: cover; }
     .navbar-top .navbar-nav.bg-transparent {
       background: none; }
+
+.navbar-top .navbar-nav.bg-transparent a {
+    background: rgba(50, 50, 50, 0.5);
+    border-radius: 10px;
+}
     .navbar-top .navbar-nav a {
       font-family: Roboto, sans-serif;
       font-size: 16px;
@@ -229,13 +234,11 @@
         height: 75% !important;
     }
 }
-
 @media (max-width: 380px) {
     .fish .fish-resize {
         height: 100% !important;
     }
 }
-
 .fish .ad-fish {
     background-color: #c19663;
     font-family: Roboto, sans-serif;
