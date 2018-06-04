@@ -76,6 +76,10 @@
       color: #ffffff;
       text-shadow: 0 2px 4px rgba(16, 16, 16, 0.75);
     }
+
+    .active {
+      color: #fd7e14;
+    }
   }
 }
 
@@ -343,3 +347,35 @@
   }
 
 }
+
+#toTop {
+  width: 100px;
+  border: 1px solid #ccc;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  background: rgba(50, 50, 50, 0.3);
+  text-align: center;
+  padding: 5px;
+  position: fixed;
+  bottom: 10px; /* отступ кнопки от нижнего края страницы*/
+  right: 10px;
+  cursor: pointer;
+  display: none;
+  color: #fff;
+  font-family: Roboto, sans-serif;
+  font-size: 11px;
+}
+
+/* bootstrap hack: fix content width inside hidden tabs */
+.tab-content > .tab-pane, .pill-content > .pill-pane {
+  display: block; /* undo display:none          */
+  height: 0; /* height:0 is also invisible */
+  overflow: hidden; /* no-overflow                */
+}
+
+.tab-content > .active, .pill-content > .active {
+  height: auto; /* let the content decide it  */
+}
+
+/* bootstrap hack end */

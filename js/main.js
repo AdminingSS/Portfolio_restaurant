@@ -1,3 +1,29 @@
+let menu_selector = "#navbarNav"; // Переменная должна содержать название класса или идентификатора, обертки нашего меню.
+function onScroll() {
+    let scroll_top = $(document).scrollTop();
+    $(menu_selector + " .full a").each(function () {
+        let hash = $(this).attr("href");
+        let target = $(hash);
+        if (target.position().top <= scroll_top && target.position().top + target.outerHeight() > scroll_top) {
+            $(menu_selector + " .full a.active").removeClass("active");
+            $(this).addClass("active");
+        } else {
+            $(this).removeClass("active");
+        }
+    });
+
+    $(menu_selector + " .mobile a").each(function () {
+        let hash = $(this).attr("href");
+        let target = $(hash);
+        if (target.position().top <= scroll_top && target.position().top + target.outerHeight() > scroll_top) {
+            $(menu_selector + " .mobile a.active").removeClass("active");
+            $(this).addClass("active");
+        } else {
+            $(this).removeClass("active");
+        }
+    });
+}
+
 $(document).ready(function () {
     //slider
     (function () {
@@ -33,7 +59,7 @@ $(document).ready(function () {
         $dishesSliderSalads.slick(dishesOptions);
         $dishesSliderDesserts.slick(dishesOptions);
         //quotes
-        const $quotesSlider = $('#quotes');
+        const $quotesSlider = $('#sliderQuotes');
         const quotesOptions = {
             infinite: true,
             slidesToShow: 1,
@@ -41,12 +67,12 @@ $(document).ready(function () {
         };
         $quotesSlider.slick(quotesOptions);
     })();
+
 });
 
-//validator
 $.validator.setDefaults({
-    submitHandler: function () {
-        alert("submitted!");
+    submitHandler: function (form) {
+        $(form).ajaxSubmit();
     }
 });
 
@@ -92,4 +118,47 @@ $(document).ready(function () {
             $(element).parents(".col-sm-8").addClass("has-success").removeClass("has-error");
         }
     });
+
+    $(function () {
+        const optionToTopBtn = 2;
+        const showToTopBtnOn = document.documentElement.clientHeight * optionToTopBtn;
+
+        $(window).scroll(function () {
+
+            if ($(this).scrollTop() > showToTopBtnOn) {
+
+                $('#toTop').fadeIn();
+
+            } else {
+
+                $('#toTop').fadeOut();
+
+            }
+
+        });
+
+        $('#toTop').click(function () {
+
+            $('body,html').animate({scrollTop: 0}, 800);
+
+        });
+
+    });
+
+    $(document).on("scroll", onScroll);
+    $("a[href^=\\#]").click(function (e) {
+        e.preventDefault();
+        $(document).off("scroll");
+        $(menu_selector + " a.active").removeClass("active");
+        $(this).addClass("active");
+        let hash = $(this).attr("href");
+        let target = $(hash);
+        $("html, body").animate({
+            scrollTop: target.offset().top
+        }, 500, function () {
+            window.location.hash = hash;
+            $(document).on("scroll", onScroll);
+        });
+    });
+
 });

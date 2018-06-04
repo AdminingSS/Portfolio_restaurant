@@ -31,13 +31,13 @@
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse align-items-center" id="navbarNav">
-            <div class="navbar-nav d-none d-md-flex mx-auto justify-content-center px-2">
-                <a class="nav-item nav-link active" href="#dishes">Dishes</a>
+            <div class="navbar-nav d-none d-md-flex mx-auto justify-content-center px-2 full">
+                <a class="nav-item nav-link" href="#dishes">Dishes</a>
                 <a class="nav-item nav-link" href="#quotes">Quotes</a>
                 <a class="nav-item nav-link" href="#features">Features</a>
             </div>
-            <div class="navbar-nav d-flex mx-auto d-md-none px-3 w-25 bg-transparent">
-                <a class="nav-item nav-link active" href="#dishes">Dishes</a>
+            <div class="navbar-nav d-flex mx-auto d-md-none px-3 w-25 bg-transparent mobile">
+                <a class="nav-item nav-link" href="#dishes">Dishes</a>
                 <a class="nav-item nav-link" href="#quotes">Quotes</a>
                 <a class="nav-item nav-link" href="#features">Features</a>
             </div>
@@ -70,139 +70,167 @@
     </div>
 </div>
 
-<div class="container-fluid  text-center dishes" id="dishes">
-    <h2 class="my-5">Our Dishes</h2>
+<div id="dishes">
+    <div class="container-fluid  text-center dishes">
+        <h2 class="my-5">Our Dishes</h2>
 
-    <div class="container text-center">
-        <div class="row justify-content-center">
-            <div class="col-10 col-sm-6 col-lg-4 mx-auto px-0">
-                <nav class="nav nav-pills mb-3 flex-nowrap" id="pills-tab" role="tablist">
-                    <a class="nav-item nav-link" id="pills-fish-tab" data-toggle="pill" href="#pills-fish" role="tab"
-                       aria-controls="pills-fish" aria-selected="false">FISH</a>
-                    <a class="nav-item nav-link active" id="pills-meat-tab" data-toggle="pill" href="#pills-meat"
-                       role="tab" aria-controls="pills-meat" aria-selected="true">MEAT</a>
-                    <a class="nav-item nav-link" id="pills-salads-tab" data-toggle="pill" href="#pills-salads"
-                       role="tab" aria-controls="pills-salads" aria-selected="false">SALADS</a>
-                    <a class="nav-item nav-link" id="pills-desserts-tab" data-toggle="pill" href="#pills-desserts"
-                       role="tab" aria-controls="pills-desserts" aria-selected="false">DESSERTS</a>
-                </nav>
-            </div>
-            <div class="col-12">
-                <div class="tab-content" id="pills-tabContent">
-                    <div class="tab-pane fade" id="pills-fish" role="tabpanel" aria-labelledby="pills-fish-tab">
-                        <!--Slider Fish-->
-                        <div class="text-center" id="sliderDishesFish">
-                            <div class="card">
-                                <img class="card-img-top rounded-circle" src="img/base.png" alt="Test">
-                                <div class="card-body">
-                                    <p class="card-text">Test</p>
+        <div class="container text-center">
+            <div class="row justify-content-center">
+                <div class="col-10 col-sm-6 col-lg-4 mx-auto px-0">
+                    <nav class="nav nav-pills mb-3 flex-nowrap" id="pills-tab" role="tablist">
+                        <a class="nav-item nav-link" id="pills-fish-tab" data-toggle="pill" href="#pills-fish"
+                           role="tab"
+                           aria-controls="pills-fish" aria-selected="false">FISH</a>
+                        <a class="nav-item nav-link active" id="pills-meat-tab" data-toggle="pill" href="#pills-meat"
+                           role="tab" aria-controls="pills-meat" aria-selected="true">MEAT</a>
+                        <a class="nav-item nav-link" id="pills-salads-tab" data-toggle="pill" href="#pills-salads"
+                           role="tab" aria-controls="pills-salads" aria-selected="false">SALADS</a>
+                        <a class="nav-item nav-link" id="pills-desserts-tab" data-toggle="pill" href="#pills-desserts"
+                           role="tab" aria-controls="pills-desserts" aria-selected="false">DESSERTS</a>
+                    </nav>
+                </div>
+                <div class="col-12">
+                    <div class="tab-content" id="pills-tabContent">
+                        <div class="tab-pane fade" id="pills-fish" role="tabpanel" aria-labelledby="pills-fish-tab">
+                            <!--Slider Fish-->
+                            <div class="text-center" id="sliderDishesFish">
+                                <div class="card">
+                                    <img class="card-img-top rounded-circle" src="img/base.png" alt="Test">
+                                    <div class="card-body">
+                                        <p class="card-text">Test</p>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="card">
-                                <img class="card-img-top rounded-circle" src="img/burger.jpg" alt="Burger">
-                                <div class="card-body">
-                                    <p class="card-text">Burger</p>
+                                <div class="card">
+                                    <a href="img/burger@2x.jpg" data-fancybox="gallery-fish" data-caption="Burger">
+                                        <img class="card-img-top rounded-circle" src="img/burger.jpg" alt="Burger">
+                                    </a>
+                                    <div class="card-body">
+                                        <p class="card-text">Burger</p>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="card">
-                                <img class="card-img-top rounded-circle" src="img/steak.jpg" alt="Steak">
-                                <div class="card-body">
-                                    <p class="card-text">Steak</p>
+                                <div class="card">
+                                    <a href="img/steak@2x.jpg" data-fancybox="gallery-fish" data-caption="Steak">
+                                        <img class="card-img-top rounded-circle" src="img/steak.jpg" alt="Steak">
+                                    </a>
+                                    <div class="card-body">
+                                        <p class="card-text">Steak</p>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="card">
-                                <img class="card-img-top rounded-circle" src="img/pasta.jpg" alt="Pasta">
-                                <div class="card-body">
-                                    <p class="card-text">Pasta</p>
+                                <div class="card">
+                                    <a href="img/pasta@2x.jpg" data-fancybox="gallery-fish" data-caption="Pasta">
+                                        <img class="card-img-top rounded-circle" src="img/pasta.jpg" alt="Pasta">
+                                    </a>
+                                    <div class="card-body">
+                                        <p class="card-text">Pasta</p>
+                                    </div>
                                 </div>
-                            </div>
 
-                        </div>
-                    </div>
-                    <div class="tab-pane fade show active" id="pills-meat" role="tabpanel"
-                         aria-labelledby="pills-meat-tab">
-                        <!--Slider Meat-->
-                        <div class="text-center" id="sliderDishesMeat">
-                            <div class="card">
-                                <img class="card-img-top rounded-circle" src="img/burger.jpg" alt="Burger">
-                                <div class="card-body">
-                                    <p class="card-text">Burger</p>
-                                </div>
-                            </div>
-                            <div class="card">
-                                <img class="card-img-top rounded-circle" src="img/steak.jpg" alt="Steak">
-                                <div class="card-body">
-                                    <p class="card-text">Steak</p>
-                                </div>
-                            </div>
-                            <div class="card">
-                                <img class="card-img-top rounded-circle" src="img/pasta.jpg" alt="Pasta">
-                                <div class="card-body">
-                                    <p class="card-text">Pasta</p>
-                                </div>
-                            </div>
-                            <div class="card">
-                                <img class="card-img-top rounded-circle" src="img/base.png" alt="Test">
-                                <div class="card-body">
-                                    <p class="card-text">Test</p>
-                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="tab-pane fade" id="pills-salads" role="tabpanel" aria-labelledby="pills-salads-tab">
-                        <!--Slider Salads-->
-                        <div class="text-center" id="sliderDishesSalads">
-                            <div class="card">
-                                <img class="card-img-top rounded-circle" src="img/steak.jpg" alt="Steak">
-                                <div class="card-body">
-                                    <p class="card-text">Steak</p>
+                        <div class="tab-pane fade show active" id="pills-meat" role="tabpanel"
+                             aria-labelledby="pills-meat-tab">
+                            <!--Slider Meat-->
+                            <div class="text-center" id="sliderDishesMeat">
+                                <div class="card">
+                                    <a href="img/burger@2x.jpg" data-fancybox="gallery-meat" data-caption="Burger">
+                                        <img class="card-img-top rounded-circle" src="img/burger.jpg" alt="Burger">
+                                    </a>
+                                    <div class="card-body">
+                                        <p class="card-text">Burger</p>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="card">
-                                <img class="card-img-top rounded-circle" src="img/burger.jpg" alt="Burger">
-                                <div class="card-body">
-                                    <p class="card-text">Burger</p>
+                                <div class="card">
+                                    <a href="img/steak@2x.jpg" data-fancybox="gallery-meat" data-caption="Steak">
+                                        <img class="card-img-top rounded-circle" src="img/steak.jpg" alt="Steak">
+                                    </a>
+                                    <div class="card-body">
+                                        <p class="card-text">Steak</p>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="card">
-                                <img class="card-img-top rounded-circle" src="img/base.png" alt="Test">
-                                <div class="card-body">
-                                    <p class="card-text">Test</p>
+                                <div class="card">
+                                    <a href="img/pasta@2x.jpg" data-fancybox="gallery-meat" data-caption="Pasta">
+                                        <img class="card-img-top rounded-circle" src="img/pasta.jpg" alt="Pasta">
+                                    </a>
+                                    <div class="card-body">
+                                        <p class="card-text">Pasta</p>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="card">
-                                <img class="card-img-top rounded-circle" src="img/pasta.jpg" alt="Pasta">
-                                <div class="card-body">
-                                    <p class="card-text">Pasta</p>
+                                <div class="card">
+                                    <img class="card-img-top rounded-circle" src="img/base.png" alt="Test">
+                                    <div class="card-body">
+                                        <p class="card-text">Test</p>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="tab-pane fade" id="pills-desserts" role="tabpanel" aria-labelledby="pills-desserts-tab">
-                        <!--Slider Desserts-->
-                        <div class="text-center" id="sliderDishesDesserts">
-                            <div class="card">
-                                <img class="card-img-top rounded-circle" src="img/steak.jpg" alt="Steak">
-                                <div class="card-body">
-                                    <p class="card-text">Steak</p>
+                        <div class="tab-pane fade" id="pills-salads" role="tabpanel" aria-labelledby="pills-salads-tab">
+                            <!--Slider Salads-->
+                            <div class="text-center" id="sliderDishesSalads">
+                                <div class="card">
+                                    <a href="img/steak@2x.jpg" data-fancybox="gallery-salads" data-caption="Steak">
+                                        <img class="card-img-top rounded-circle" src="img/steak.jpg" alt="Steak">
+                                    </a>
+                                    <div class="card-body">
+                                        <p class="card-text">Steak</p>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <a href="img/burger@2x.jpg" data-fancybox="gallery-salads" data-caption="Burger">
+                                        <img class="card-img-top rounded-circle" src="img/burger.jpg" alt="Burger">
+                                    </a>
+                                    <div class="card-body">
+                                        <p class="card-text">Burger</p>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <img class="card-img-top rounded-circle" src="img/base.png" alt="Test">
+                                    <div class="card-body">
+                                        <p class="card-text">Test</p>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <a href="img/pasta@2x.jpg" data-fancybox="gallery-salads" data-caption="Pasta">
+                                        <img class="card-img-top rounded-circle" src="img/pasta.jpg" alt="Pasta">
+                                    </a>
+                                    <div class="card-body">
+                                        <p class="card-text">Pasta</p>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="card">
-                                <img class="card-img-top rounded-circle" src="img/pasta.jpg" alt="Pasta">
-                                <div class="card-body">
-                                    <p class="card-text">Pasta</p>
+                        </div>
+                        <div class="tab-pane fade" id="pills-desserts" role="tabpanel"
+                             aria-labelledby="pills-desserts-tab">
+                            <!--Slider Desserts-->
+                            <div class="text-center" id="sliderDishesDesserts">
+                                <div class="card">
+                                    <a href="img/steak@2x.jpg" data-fancybox="gallery-desserts" data-caption="Steak">
+                                        <img class="card-img-top rounded-circle" src="img/steak.jpg" alt="Steak">
+                                    </a>
+                                    <div class="card-body">
+                                        <p class="card-text">Steak</p>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="card">
-                                <img class="card-img-top rounded-circle" src="img/burger.jpg" alt="Burger">
-                                <div class="card-body">
-                                    <p class="card-text">Burger</p>
+                                <div class="card">
+                                    <a href="img/pasta@2x.jpg" data-fancybox="gallery-desserts" data-caption="Pasta">
+                                        <img class="card-img-top rounded-circle" src="img/pasta.jpg" alt="Pasta">
+                                    </a>
+                                    <div class="card-body">
+                                        <p class="card-text">Pasta</p>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="card">
-                                <img class="card-img-top rounded-circle" src="img/base.png" alt="Test">
-                                <div class="card-body">
-                                    <p class="card-text">Test</p>
+                                <div class="card">
+                                    <a href="img/burger@2x.jpg" data-fancybox="gallery-desserts" data-caption="Burger">
+                                        <img class="card-img-top rounded-circle" src="img/burger.jpg" alt="Burger">
+                                    </a>
+                                    <div class="card-body">
+                                        <p class="card-text">Burger</p>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <img class="card-img-top rounded-circle" src="img/base.png" alt="Test">
+                                    <div class="card-body">
+                                        <p class="card-text">Test</p>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -213,83 +241,87 @@
     </div>
 </div>
 
-<div class="container-fluid position-relative quotes p-0" id="quotes">
-    <div class="position-relative">
-        <img class="w-100" src="img/chef.jpg" alt="">
-        <div class="t-0 w-100">
-            <div class="container">
-                <div class="row">
-                    <div class="col-10 col-lg">
-                        <h5 class="my-0 mt-sm-5 mb-sm-3">“Lorem ipsum and other texts.
-                            We are the best restaurant.“</h5>
-                        <p>Paul Tasty, chef</p>
+<div id="quotes">
+    <div class="container-fluid position-relative quotes p-0" id="sliderQuotes">
+        <div class="position-relative">
+            <img class="w-100" src="img/chef.jpg" alt="">
+            <div class="t-0 w-100">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-10 col-lg">
+                            <h5 class="my-0 mt-sm-5 mb-sm-3">“Lorem ipsum and other texts.
+                                We are the best restaurant.“</h5>
+                            <p>Paul Tasty, chef</p>
+                        </div>
+                        <div class="col"></div>
+                        <div class="col"></div>
                     </div>
-                    <div class="col"></div>
-                    <div class="col"></div>
                 </div>
             </div>
         </div>
-    </div>
-    <div class="position-relative">
-        <img class="w-100" src="img/chef.jpg" alt="">
-        <div class="t-0 w-100">
-            <div class="container">
-                <div class="row">
-                    <div class="col-10 col-lg">
-                        <h5 class="my-0 mt-sm-5 mb-sm-3">“Lorem ipsum and other texts.
-                            We are the best restaurant.“</h5>
-                        <p>Paul Tasty, chef</p>
+        <div class="position-relative">
+            <img class="w-100" src="img/chef.jpg" alt="">
+            <div class="t-0 w-100">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-10 col-lg">
+                            <h5 class="my-0 mt-sm-5 mb-sm-3">“Lorem ipsum and other texts.
+                                We are the best restaurant.“</h5>
+                            <p>Paul Tasty, chef</p>
+                        </div>
+                        <div class="col"></div>
+                        <div class="col"></div>
                     </div>
-                    <div class="col"></div>
-                    <div class="col"></div>
                 </div>
             </div>
         </div>
     </div>
 </div>
 
-<div class="container-fluid text-center features" id="features">
-    <h2 class="my-5">Features</h2>
-    <div class="container text-left">
-        <div class="row my-5">
-            <div class="col-6 col-sm-4 my-2">
-                <div class="d-flex align-items-center">
-                    <img src="img/icon-coctails.png" alt="Coctails">
-                    <span class="mx-2">200+ coctails</span>
+<div id="features">
+    <div class="container-fluid text-center features">
+        <h2 class="my-5">Features</h2>
+        <div class="container text-left">
+            <div class="row my-5">
+                <div class="col-6 col-sm-4 my-2">
+                    <div class="d-flex align-items-center">
+                        <img src="img/icon-coctails.png" alt="Coctails">
+                        <span class="mx-2">200+ coctails</span>
+                    </div>
                 </div>
-            </div>
-            <div class="col-6 col-sm-4 my-2">
-                <div class="d-flex align-items-center">
-                    <img src="img/icon-burger.png" alt="Burger">
-                    <span class="mx-2">Huge burgers</span>
+                <div class="col-6 col-sm-4 my-2">
+                    <div class="d-flex align-items-center">
+                        <img src="img/icon-burger.png" alt="Burger">
+                        <span class="mx-2">Huge burgers</span>
+                    </div>
                 </div>
-            </div>
-            <div class="w-100 my-2 d-sm-none"></div>
-            <div class="col-6 col-sm-4 my-2">
-                <div class="d-flex align-items-center">
-                    <img src="img/icon-pin.png" alt="Pin">
-                    <span class="mx-2">21 restaurants in 8 countries</span>
+                <div class="w-100 my-2 d-sm-none"></div>
+                <div class="col-6 col-sm-4 my-2">
+                    <div class="d-flex align-items-center">
+                        <img src="img/icon-pin.png" alt="Pin">
+                        <span class="mx-2">21 restaurants in 8 countries</span>
+                    </div>
                 </div>
-            </div>
-            <!--</div>-->
-            <!--<div class="row my-5">-->
-            <div class="col-6 col-sm-4 my-2">
-                <div class="d-flex align-items-center">
-                    <img src="img/icon-heart.png" alt="Heart">
-                    <span class="mx-2">2 000+ happy clients</span>
+                <!--</div>-->
+                <!--<div class="row my-5">-->
+                <div class="col-6 col-sm-4 my-2">
+                    <div class="d-flex align-items-center">
+                        <img src="img/icon-heart.png" alt="Heart">
+                        <span class="mx-2">2 000+ happy clients</span>
+                    </div>
                 </div>
-            </div>
-            <div class="w-100 my-2 d-sm-none"></div>
-            <div class="col-6 col-sm-4 my-2">
-                <div class="d-flex align-items-center">
-                    <img src="img/icon-reward.png" alt="Reward">
-                    <span class="mx-2">14 Reward</span>
+                <div class="w-100 my-2 d-sm-none"></div>
+                <div class="col-6 col-sm-4 my-2">
+                    <div class="d-flex align-items-center">
+                        <img src="img/icon-reward.png" alt="Reward">
+                        <span class="mx-2">14 Reward</span>
+                    </div>
                 </div>
-            </div>
-            <div class="col-6 col-sm-4 my-2">
-                <div class="d-flex align-items-center">
-                    <img src="img/icon-service.png" alt="Service">
-                    <span class="mx-2">Best service</span>
+                <div class="col-6 col-sm-4 my-2">
+                    <div class="d-flex align-items-center">
+                        <img src="img/icon-service.png" alt="Service">
+                        <span class="mx-2">Best service</span>
+                    </div>
                 </div>
             </div>
         </div>
@@ -319,7 +351,7 @@
                 <div class=" col-10 col-sm-8 col-md-6 text-center d-flex flex-column justify-content-center"
                      style="background-color: #333333;">
                     <h5>Call us to book a table</h5>
-                    <h1>01234 567890 </h1>
+                    <a href="skype:01234567890?call"><h1>01234 567890</h1></a>
                 </div>
             </div>
         </div>
@@ -349,7 +381,7 @@
                     <h3 class="panel-title">Booking form</h3>
                 </div>
                 <div class="panel-body">
-                    <form id="bookingForm" method="post" class="form-horizontal" action="">
+                    <form id="bookingForm" method="post" class="form-horizontal" action="php/mailer.php">
                         <div class="form-group row">
                             <label class="col-sm-4 control-label" for="name">Name</label>
                             <div class="col-sm-8">
@@ -358,7 +390,7 @@
                         </div>
 
                         <div class="form-group row">
-                            <label class="col-sm-4 control-label" for="phone">Username</label>
+                            <label class="col-sm-4 control-label" for="phone">Phone</label>
                             <div class="col-sm-8">
                                 <input type="text" class="form-control" id="phone" name="phone" placeholder="Phone"/>
                             </div>
@@ -393,8 +425,10 @@
     </div>
 </div>
 
+<div id="toTop"> Наверх</div>
+
 <!--Lib JS -->
-<script src="libs/http_code.jquery.com_jquery-3.3.1.slim.js"></script>
+<script src="libs/jquery-3.3.1.min.js"></script>
 <script src="libs/http_cdnjs.cloudflare.com_ajax_libs_popper.js_1.14.3_umd_popper.js"></script>
 <script src="libs/bootstrap.min.js"></script>
 <script src="libs/slick/slick.js"></script>
@@ -404,6 +438,7 @@
 
 <!--Project JS-->
 <script src="js/main.js"></script>
+
 
 </body>
 </html>
