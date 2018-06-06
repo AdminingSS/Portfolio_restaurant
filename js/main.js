@@ -98,10 +98,11 @@ $(document).ready(function () {
         let menu_selector = "#navbarNav"; // Переменная должна содержать название класса или идентификатора, обертки нашего меню.
         function onScroll() {
             let scroll_top = $(document).scrollTop();
+            const zoneOffset = 100;
             $(menu_selector + " .full a").each(function () {
                 let hash = $(this).attr("href");
                 let target = $(hash);
-                if (target.position().top <= scroll_top && target.position().top + target.outerHeight() > scroll_top) {
+                if (target.position().top - zoneOffset <= scroll_top && target.position().top + target.outerHeight() - zoneOffset > scroll_top) {
                     $(menu_selector + " .full a.active").removeClass("active");
                     $(this).addClass("active");
                 } else {
@@ -112,7 +113,7 @@ $(document).ready(function () {
             $(menu_selector + " .mobile a").each(function () {
                 let hash = $(this).attr("href");
                 let target = $(hash);
-                if (target.position().top <= scroll_top && target.position().top + target.outerHeight() > scroll_top) {
+                if (target.position().top - zoneOffset <= scroll_top && target.position().top + target.outerHeight() - zoneOffset > scroll_top) {
                     $(menu_selector + " .mobile a.active").removeClass("active");
                     $(this).addClass("active");
                 } else {
