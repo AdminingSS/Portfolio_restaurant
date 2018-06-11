@@ -142,7 +142,7 @@ $(document).ready(function () {
     //Кнопка Наверх
     $(function () {
         const optionToTopBtn = 2;
-        const showToTopBtnOn = document.documentElement.clientHeight * optionToTopBtn;
+        let showToTopBtnOn = document.documentElement.clientHeight * optionToTopBtn;
 
         $(window).scroll(function () {
             if ($(this).scrollTop() > showToTopBtnOn) {

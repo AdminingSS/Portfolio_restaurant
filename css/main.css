@@ -70,12 +70,12 @@
   background: url("../img/header-main.jpg") no-repeat;
   -webkit-background-size: cover;
   background-size: cover;
-  min-height: 400px;
+    min-height: 100vh;
   color: #ffffff; }
   .header-main .img-box {
     padding-top: 66.7%;
     height: 0;
-      min-height: 400px;
+      min-height: 100vh;
     position: relative; }
     .header-main .img-box .content-box {
       position: absolute;
@@ -113,13 +113,19 @@
     height: 60px;
     border-radius: 3px;
     background-color: #c19663;
-    border: solid 3px #c19663;
     font-family: Roboto, sans-serif;
     font-size: 18px;
     font-weight: 900;
     line-height: 1.67;
     letter-spacing: 1.8px;
-    color: #ffffff; }
+      color: #ffffff;
+      border: none;
+  }
+
+.header-main button:hover, .header-main button:focus {
+    background-color: #615347;
+    box-shadow: inset 0px -3px 0 0 #39312b;
+}
 
 .dishes h2 {
   font-family: AbrilFatface, cursive;
@@ -151,6 +157,10 @@
     border-radius: 3px;
     background-color: #ffffff;
     border: solid 2px #373737; }
+
+.dishes .nav-link:hover {
+    background-color: #d5d5d5;
+}
 .dishes .slick-next {
     z-index: 1;
     top: 110px;
@@ -179,6 +189,10 @@
 .dishes .card .card-img-top {
     width: 220px;
     height: 220px;
+}
+
+.dishes .card:hover {
+    background-color: #e1e1e1;
 }
 
 .quotes {
