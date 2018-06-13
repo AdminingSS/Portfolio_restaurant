@@ -204,6 +204,11 @@
 }
 
 .quotes {
+
+  .slide-quotes {
+    background-image: url("../img/chef.jpg");
+  }
+
   font-family: Roboto, sans-serif;
   font-weight: normal;
 
@@ -286,12 +291,13 @@
 }
 
 .booking {
+  background-image: url("../img/booking.jpg");
 
-  .booking-resize {
-    @media (max-width: 380px) {
-      height: 75% !important;
-    }
-  }
+  //.booking-resize {
+  //  @media (max-width: 380px) {
+  //    height: 75% !important;
+  //  }
+  //}
 
   h5 {
     font-family: Roboto, sans-serif;

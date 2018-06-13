@@ -20,6 +20,13 @@ $(document).ready(function () {
                     }
                 },
                 {
+                    breakpoint: 768,
+                    settings: {
+                        slidesToShow: 2,
+                        slidesToScroll: 1
+                    }
+                },
+                {
                     breakpoint: 600,
                     settings: {
                         slidesToShow: 1,
@@ -141,7 +148,7 @@ $(document).ready(function () {
 
     //Кнопка Наверх
     $(function () {
-        const optionToTopBtn = 2;
+        const optionToTopBtn = 1;
         let showToTopBtnOn = document.documentElement.clientHeight * optionToTopBtn;
 
         $(window).scroll(function () {
