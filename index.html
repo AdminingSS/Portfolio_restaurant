@@ -24,19 +24,19 @@
 <body>
 
 <!--Navbar-->
-<div class="container-fluid navbar-top">
+<div class="container-fluid navbar-top z-100 t-0 position-fixed">
     <nav class="navbar navbar-expand-md">
         <button class="navbar-toggler mx-auto" type="button" data-toggle="collapse" data-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse align-items-center" id="navbarNav">
-            <div class="navbar-nav d-none d-md-flex mx-auto justify-content-center px-2 full">
+            <div class="navbar-nav bg-cover d-none d-md-flex mx-auto align-items-center justify-content-center pb-2 full">
                 <a class="nav-item nav-link" href="#dishes">Dishes</a>
                 <a class="nav-item nav-link" href="#quotes">Quotes</a>
                 <a class="nav-item nav-link" href="#features">Features</a>
             </div>
-            <div class="navbar-nav d-flex mx-auto d-md-none px-3 w-25 bg-transparent mobile">
+            <div class="navbar-nav d-flex mx-auto d-md-none px-3 bg-transparent h-100 mobile">
                 <a class="nav-item nav-link" href="#dishes">Dishes</a>
                 <a class="nav-item nav-link" href="#quotes">Quotes</a>
                 <a class="nav-item nav-link" href="#features">Features</a>
@@ -45,29 +45,18 @@
     </nav>
 </div>
 
-<div class="container-fluid header-main">
-    <div class="img-box">
-        <div class="container-fluid content-box">
-            <div class="container h-100">
-                <div class="row h-50">
-                    <div class="col">
-
-                    </div>
-                </div>
-                <div class="row h-50 align-items-center justify-content-around">
-                    <div class="col-12 col-md-10 col-lg-8 col-xl-6">
+<div class="container-fluid header-main h-100vh bg-cover z-0">
+    <div class="container h-100vh">
+        <div class="row h-100vh align-items-end">
+            <div class="col-12 col-md-10 col-lg-8 col-xl-6 pb-1">
                         <h1>The best restaurant</h1>
                         <p class="my-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab aspernatur at
                             blanditiis culpa earum et ex labore minus qui?</p>
                         <button class="mt-2 btn" data-fancybox data-src="#hiddenBookingForm">BOOK A TABLE</button>
                     </div>
-                    <div class="col-3">
-
-                    </div>
                 </div>
+        <div class="w-100 d-none d-md-block p-2"></div>
             </div>
-        </div>
-    </div>
 </div>
 
 <div id="dishes">
@@ -79,8 +68,7 @@
                 <div class="col-10 col-sm-6 col-lg-4 mx-auto px-0">
                     <nav class="nav nav-pills mb-3 flex-nowrap" id="pills-tab" role="tablist">
                         <a class="nav-item nav-link" id="pills-fish-tab" data-toggle="pill" href="#pills-fish"
-                           role="tab"
-                           aria-controls="pills-fish" aria-selected="false">FISH</a>
+                           role="tab" aria-controls="pills-fish" aria-selected="false">FISH</a>
                         <a class="nav-item nav-link active" id="pills-meat-tab" data-toggle="pill" href="#pills-meat"
                            role="tab" aria-controls="pills-meat" aria-selected="true">MEAT</a>
                         <a class="nav-item nav-link" id="pills-salads-tab" data-toggle="pill" href="#pills-salads"
@@ -245,7 +233,7 @@
     <div class="container-fluid position-relative quotes p-0" id="sliderQuotes">
         <div class="position-relative">
             <img class="w-100" src="img/chef.jpg" alt="">
-            <div class="t-0 w-100">
+            <div class="position-absolute t-0 w-100">
                 <div class="container">
                     <div class="row">
                         <div class="col-10 col-lg">
@@ -261,7 +249,7 @@
         </div>
         <div class="position-relative">
             <img class="w-100" src="img/chef.jpg" alt="">
-            <div class="t-0 w-100">
+            <div class="position-absolute t-0 w-100">
                 <div class="container">
                     <div class="row">
                         <div class="col-10 col-lg">
@@ -328,24 +316,20 @@
     </div>
 </div>
 
-<div class="container-fluid position-relative fish p-0">
-    <img class="w-100" src="img/fish.jpg" alt="">
-    <div class="t-0 w-100 h-100">
-        <div class="container h-100 d-flex align-items-center">
-            <div class="row h-50 fish-resize">
-                <div class="col-4 col-md-6"></div>
-                <div class="col-8 col-md-6 d-flex flex-column justify-content-center ad-fish">
+<div class="container-fluid fish p-0 h-50vh bg-cover">
+    <div class="container h-50vh d-flex align-items-center">
+        <div class="row justify-content-end">
+            <div class="col-8 col-md-6 d-flex flex-column justify-content-center h-25vh ad-fish">
                     <h5>Grilled Fish</h5>
                     <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci alias consequuntur debitis delectus dolores eius eligendi est et, fugiat illum ipsa ipsam laboriosam laborum minima officiis praesentium saepe soluta unde?</span>
                 </div>
             </div>
         </div>
-    </div>
 </div>
 
 <div class="container-fluid position-relative booking p-0">
     <img class="w-100" src="img/booking.jpg" alt="">
-    <div class="t-0 w-100 h-100">
+    <div class="position-absolute t-0 w-100 h-100">
         <div class="container h-100 d-flex align-items-center">
             <div class="row h-50 booking-resize justify-content-center w-100">
                 <div class=" col-10 col-sm-8 col-md-6 text-center d-flex flex-column justify-content-center"
