@@ -2,10 +2,12 @@ $(document).ready(function () {
     //Слайдер
     (function () {
         //dishes
-        const $dishesSliderFish = $('#sliderDishesFish');
-        const $dishesSliderMeat = $('#sliderDishesMeat');
-        const $dishesSliderSalads = $('#sliderDishesSalads');
-        const $dishesSliderDesserts = $('#sliderDishesDesserts');
+        //const $dishesSliderFish = $('#sliderDishesFish');
+        //const $dishesSliderMeat = $('#sliderDishesMeat');
+        //const $dishesSliderSalads = $('#sliderDishesSalads');
+        //const $dishesSliderDesserts = $('#sliderDishesDesserts');
+
+        const $dishesSlider = $('#sliderDishesFish,#sliderDishesMeat,#sliderDishesSalads,#sliderDishesDesserts')
 
         const dishesOptions = {
             infinite: true,
@@ -35,14 +37,16 @@ $(document).ready(function () {
                 }
             ]
         };
-        $dishesSliderFish.slick(dishesOptions);
-        $dishesSliderMeat.slick(dishesOptions);
-        $dishesSliderSalads.slick(dishesOptions);
-        $dishesSliderDesserts.slick(dishesOptions);
+        // $dishesSliderFish.slick(dishesOptions);
+        // $dishesSliderMeat.slick(dishesOptions);
+        // $dishesSliderSalads.slick(dishesOptions);
+        // $dishesSliderDesserts.slick(dishesOptions);
+        $dishesSlider.slick(dishesOptions);
         //quotes
         const $quotesSlider = $('#sliderQuotes');
         const quotesOptions = {
             infinite: true,
+            arrows: false,
             slidesToShow: 1,
             slidesToScroll: 1
         };
@@ -102,13 +106,13 @@ $(document).ready(function () {
 
     //Навбар
     (function () {
-        let menu_selector = "#navbarNav"; // Переменная должна содержать название класса или идентификатора, обертки нашего меню.
+        const menu_selector = "#navbarNav"; // Переменная должна содержать название класса или идентификатора, обертки нашего меню.
         function onScroll() {
-            let scroll_top = $(document).scrollTop();
+            const scroll_top = $(document).scrollTop();
             const zoneOffset = 100;
             $(menu_selector + " .full a").each(function () {
-                let hash = $(this).attr("href");
-                let target = $(hash);
+                const hash = $(this).attr("href");
+                const target = $(hash);
                 if (target.position().top - zoneOffset <= scroll_top && target.position().top + target.outerHeight() - zoneOffset > scroll_top) {
                     $(menu_selector + " .full a.active").removeClass("active");
                     $(this).addClass("active");
@@ -118,8 +122,8 @@ $(document).ready(function () {
             });
 
             $(menu_selector + " .mobile a").each(function () {
-                let hash = $(this).attr("href");
-                let target = $(hash);
+                const hash = $(this).attr("href");
+                const target = $(hash);
                 if (target.position().top - zoneOffset <= scroll_top && target.position().top + target.outerHeight() - zoneOffset > scroll_top) {
                     $(menu_selector + " .mobile a.active").removeClass("active");
                     $(this).addClass("active");
@@ -135,8 +139,8 @@ $(document).ready(function () {
             $(document).off("scroll");
             $(menu_selector + " a.active").removeClass("active");
             $(this).addClass("active");
-            let hash = $(this).attr("href");
-            let target = $(hash);
+            const hash = $(this).attr("href");
+            const target = $(hash);
             $("html, body").animate({
                 scrollTop: target.offset().top
             }, 500, function () {
@@ -149,7 +153,7 @@ $(document).ready(function () {
     //Кнопка Наверх
     $(function () {
         const optionToTopBtn = 1;
-        let showToTopBtnOn = document.documentElement.clientHeight * optionToTopBtn;
+        const showToTopBtnOn = document.documentElement.clientHeight * optionToTopBtn;
 
         $(window).scroll(function () {
             if ($(this).scrollTop() > showToTopBtnOn) {

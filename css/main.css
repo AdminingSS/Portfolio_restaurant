@@ -261,12 +261,6 @@
     color: #333333;
 }
 
-@media (max-width: 768px) {
-    .features {
-        font-size: 12px;
-    }
-}
-
 .fish {
     background-image: url("../img/fish.jpg");
 }
@@ -283,21 +277,9 @@
     line-height: 1.43;
 }
 
-@media (max-width: 768px) {
-    .fish .ad-fish h5 {
-        font-size: 14px;
-    }
-}
-
 .fish .ad-fish span {
     font-size: 15px;
     line-height: normal;
-}
-
-@media (max-width: 768px) {
-    .fish .ad-fish span {
-        font-size: 10px;
-    }
 }
 
 .booking {

@@ -169,7 +169,7 @@
       content: '';
       display: block;
       background: url("../img/next-arrow.png") no-repeat;
-      width: $fontSizeSmall;
+      width: 15px;
       height: 25px;
     }
   }
@@ -182,7 +182,7 @@
       content: '';
       display: block;
       background: url("../img/prev-arrow.png") no-repeat;
-      width: $fontSizeSmall;
+      width: 15px;
       height: 25px;
     }
   }
@@ -248,9 +248,9 @@
   color: #333333;
   text-align: center;
 
-  @media (max-width: 768px) {
-    font-size: 12px;
-  }
+  //@media (max-width: 768px) {
+  //  font-size: 12px;
+  //}
 
 }
 
@@ -275,17 +275,17 @@
     h5 {
       font-size: 21px;
       line-height: 1.43;
-      @media (max-width: 768px) {
-        font-size: 14px;
-      }
+      //@media (max-width: 768px) {
+      //  font-size: 14px;
+      //}
     }
 
     span {
       font-size: $fontSizeSmall;
       line-height: normal;
-      @media (max-width: 768px) {
-        font-size: 10px;
-      }
+      //@media (max-width: 768px) {
+      //  font-size: 10px;
+      //}
     }
   }
 }
