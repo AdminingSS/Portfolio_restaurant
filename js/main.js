@@ -42,6 +42,7 @@ $(document).ready(function () {
         // $dishesSliderSalads.slick(dishesOptions);
         // $dishesSliderDesserts.slick(dishesOptions);
         $dishesSlider.slick(dishesOptions);
+
         //quotes
         const $quotesSlider = $('#sliderQuotes');
         const quotesOptions = {
